@@ -30,4 +30,7 @@ while game_is_on:
 
     for car in cars.cars:
         if car.distance(player) <= 20:
+            level.game_over()
             game_is_on = False
+
+screen.exitonclick()
